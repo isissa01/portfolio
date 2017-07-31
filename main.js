@@ -3,6 +3,16 @@ $(document).ready(function(){
 $('.parallax').parallax();
 $('select').material_select();
 $('.scrollspy').scrollSpy();
+$(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+
+
+
+
+
+
+
 });
 
 
@@ -15,7 +25,9 @@ $('#contact-form').submit(function(event){
     method: 'post',
     data: data,
     success: function(response){
-        $('.output').html(response);
+
+        var $toastContent = $(response).add($('<button class="btn-flat toast-action">&times;</button>'));
+          Materialize.toast($toastContent, 1000);
     }
   });
 });

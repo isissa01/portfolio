@@ -1,9 +1,9 @@
-<!--Contact Page-->
 
 
 <?php
+// set_include_path("{$_SERVER['DOCUMENT_ROOT']}/");
 
-require_once "./phpmailer/PHPMailerAutoLoad.php";
+include( "phpmailer/PHPMailerAutoload.php");
 
 
 if (isset($_POST['first_name'], $_POST['last_name'], $_POST['subject'],$_POST['email'], $_POST['message'])  ){
@@ -22,15 +22,20 @@ if (isset($_POST['first_name'], $_POST['last_name'], $_POST['subject'],$_POST['e
  $mail->AddAddress( 'isissa01@gmail.com' );
 
  if($mail->Send()){
-   echo $output_message = '<p class="alert alert-success">Message Sent Successfully.<span class="close" data-dismiss="alert">&times;</span></p>';
+   echo $output_message = '<p>Message Sent Successfully.</p>';
 
  }
  else{
-   echo $output_message = '<p class="alert alert-danger">Message was unable to be sent try again later.<span class="close" data-dismiss="alert">&times;</span></p>' . $mail->ErrorInfo;
+   echo $output_message = '<p>Message was unable to be sent try again later.</p>' . $mail->ErrorInfo;
 
 
 
  }
 }
+else {
+  echo "<p>not all things are equal</p>";
+}
+
+
 
 ?>
