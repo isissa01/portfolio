@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Issa Issa</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<script src="https://use.fontawesome.com/35c7f7a47c.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav>
+<div class="nav-wrapper black ">
+  <a href="#!" class="brand-logo">ISSA ISSA</a>
+  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  <ul class="right hide-on-med-and-down table-of-contents">
+    <li><a href="#index-banner">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</div>
+</nav>
+</div>
+<ul class="side-nav" id="mobile-demo">
+  <li><a href="#">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+  <main >
+      <div id="index-banner" class="parallax-container scrollspy">
+        <div class="section">
+          <div class="container">
+            <br><br>
+            <h1 class="header white-text center">Hi, I'm Issa. I build web Applications.</h1>
+
+            <div class="row center">
+              <a href="#contact" class="btn-large rounded white-text  waves-effect waves-light  hoverable">I'm available for hire<i class="material-icons right">keyboard_arrow_right</i></a>
+            </div>
+            <br><br>
+            <div class="row center learn-more">
+              <p class='grey-text text-lighten-1 light'>Learn more about what I do.</p>
+              <a href="#about" class="btn-floating transparent btn-large waves-effect waves-light red-text hoverable"><i class="material-icons">keyboard_arrow_down</i></a>
+            </div>
+
+            <br><br>
+          </div>
+        </div>
+        <div class="parallax"><img  src="image1.jpeg" alt=""></div>
+      </div>
+
+
+
+
+
+
+      <div   class="container scrollspy" id="about">
+        <div class="section" >
+
+          <h2 class="header col center s12 light">About Me</h2>
+            <p class="light center">I specialize in front end web development. I use web technologies like jquery, bootstrap, foundation, and materialize. I also have backend development skills using php and mysql. If you are a business seeking a web presence or an employer looking to hire, you have come to the right place to find the perfect candidate to hire for the job.</p>
+          <!--   Icon Section   -->
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <h2 class="center red-text"><i class="material-icons">create</i></h2>
+                <h5 class="center">Front-End</h5>
+
+                <p class="light ">I design in the browser with HTML(5), CSS(3).I build interactivity into my applications using javascript. I know how to use jquery to make my workflow quicker, and I use ajax to interact with servers and javascript apis. I love coding things from scratch, but I also with front-end frameworks like Bootstrap, Foundation, and Materialize to get projects done quickly and efficiently.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m6">
+              <div class="icon-block">
+                <h2 class="center red-text"><i class="material-icons">code</i></h2>
+                <h5 class="center">Back-End</h5>
+
+                <p class="light ">After creating the front-end of a project, I use PHP and MYSQL for back-end development on the project. I know how to create databases and know how to interact with the databases to make the application store and retrieve data that it uses. </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+        <div id="portfolio"  class="scrollspy">
+        <div class="parallax-container valign-wrapper">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <div class="row center">
+                <h2 class="header col  white-text s12 light">PORTFOLIO</h2>
+              </div>
+            </div>
+          </div>
+          <div class="parallax"><img src="image2.jpeg" alt="Unsplashed background img 2"></div>
+        </div>
+        <div class="grey lighten-4" id="gallery">
+        <div class="container ">
+          <div class="section">
+            <div class="row project">
+              <div class="col s12 m6 push-m6">
+                  <img src="image1.jpeg" alt="" class="responsive-img">
+              </div>
+              <div class="col s12 m6 pull-m6">
+                  <h4 class="center">Offsett Empire</h4>
+                  <p class="light">Website for selling instrumentals. I used the bootstrap framework for the front-end. I also created an audio player to play the audio files when a user goes to the home page of the site. I used the paypal api to so that users could pay using paypal. I used php and mysqli so save the data of the instrumentals and the transactions to the database and I also created a registrationa and login system for this project. It also has an admin section where the admin can add, delete and edit instrumentals, view and delete users,  add view, edit, and new posts to the music posts page.</p>
+                  <a href="" class="btn-large rounded black-text center waves-effect waves-light ">Visit Website</a>
+              </div>
+            </div>
+            <div class="divider"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div id="contact" class="scrollspy" >
+        <div class="section container">
+
+          <div class="row">
+            <div class="col s12 center">
+              <h2 class="header col center s12 light">Contact Me</h2>
+              <div class="row">
+                <div class="col s12 output"></div>
+                  <form class="col s12" method='post' action='contact.php' id="contact-form">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="icon_prefix" type="text" class="validate" data-length="25" name="first_name">
+                        <label for="icon_prefix">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate" data-length="25" name="last_name">
+                        <label for="last_name">Last Name</label>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col s12 center">
+                        <div class="input-field col m6 s12">
+                          <input id="email" type="email" class="validate" name="email">
+                          <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                          <select id="subject" name="subject">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">I Need A Website Developed</option>
+                            <option value="2">I Want To Hire You</option>
+                          </select>
+
+                          <label for="subject">Subject</label>
+
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="icon_prefix2" class="materialize-textarea" data-length="250" name="message"></textarea>
+                        <label for="icon_prefix2">Message</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input type="submit" value="Send" class="center btn-large rounded black-text  hoverable">
+                      </div>
+                    </div>
+                  </form>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+  <div class="divider"></div>
+  <div id="map" class="hoverable">
+
+  </div>
+  <div class="divider"></div>
+  </main>
+
+
+  <footer class="page-footer black ">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Thanks For Comming</h5>
+                <p class="grey-text text-lighten-4">Check Out My Git Hub Page And My Linkdon Account By Clicking the links on the right</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text light">Connect With Us</h5>
+                <ul>
+                  <li><a class="white-text" href="https://github.com/isissa01/"><i class="left fa fa-github" aria-hidden="true"></i>isissa01</a></li>
+
+                  <li><a class="white-text" href="https://twitter.com/isissa01"><i class="left fa fa-twitter" aria-hidden="true"></i>@isissa01</a></li>
+
+                  <li><a class="white-text" href="http://www.linkedin.com/in/issa-issa"><i class="left fa fa-linkedin" aria-hidden="true"></i>@isissa01</a></li>
+
+                </ul>
+                <div class="fixed-action-btn horizontal">
+                  <a class="btn-floating btn-large red">
+                    <i class="large material-icons">add</i>
+                  </a>
+                  <ul>
+                    <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+                    <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+                    <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+                    <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright Iss Issa
+            </div>
+          </div>
+        </footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTsBlcEbHC_F3rMqtR744Al8ohW0Q5zBA&callback=initMap"
+        async defer></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
